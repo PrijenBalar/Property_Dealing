@@ -1,0 +1,24 @@
+# Python
+.venv/
+__pycache__/
+*.pyc
+
+# IDE
+.idea/
+
+# Built desktop app: .exe, bundled PHP/MySQL runtime, the live database,
+# logs, and the "LOGINS and ROLES.txt" credentials file
+KargilProperty/
+KargilProperty-Desktop.zip
+
+# PyInstaller build outputs
+_desktop_build/dist/
+_desktop_build/pybuild/
+build/
+dist/
+
+# Logs / temp / OS
+*.log
+data_tmp/
+Thumbs.db
+.DS_Store

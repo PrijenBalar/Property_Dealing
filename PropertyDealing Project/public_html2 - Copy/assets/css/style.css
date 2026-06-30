@@ -1,0 +1,103 @@
+body {
+  background:#f8f9fa;
+}
+
+.card img {
+  height:200px;
+  object-fit:cover;
+}
+
+.navbar-brand img{
+  max-height:45px;
+}
+
+/* ======= Mobile-first header tweaks ======= */
+/* Base: keep desktop behaviour as is, only override inside media queries */
+
+/* Up to tablets (<= 768px) */
+@media (max-width: 768px) {
+  /* Keep logo + brand on a single row, shrink brand text */
+  .navbar-brand span {
+    font-size: 18px;
+    white-space: nowrap;
+  }
+
+  /* Allow container to wrap so nav moves below brand */
+  .navbar .container {
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
+  .navbar .container a img{
+  height: 100px;
+  width: 100px;
+}
+
+  /* Right-side nav + filter stack vertically and align right */
+  .navbar .container > .d-flex {
+    flex: 1 0 100%;
+    flex-direction: row;
+    align-items: flex-end;
+    gap: 0.15rem;
+    margin-top: 0.35rem;
+  }
+
+  /* Stack nav links vertically, smaller font for mobile */
+  .navbar .nav-link {
+    padding: 0.2rem 0;
+    font-size: 0.9rem;
+  }
+
+  /* Filter button: slightly smaller, aligned to the right */
+  #filterToggle.btn {
+    padding: 0.35rem 0.9rem;
+    font-size: 0.9rem;
+  }
+}
+
+/* Small phones (<= 480px) */
+@media (max-width: 480px) {
+  .navbar-brand img {
+    max-height: 38px;
+    margin-right: 6px;
+  }
+
+  .navbar-brand span {
+    font-size: 16px;
+  }
+
+  .navbar .nav-link {
+    font-size: 0.85rem;
+  }
+
+  #filterToggle.btn {
+    width: 110px;
+    justify-content: center;
+  }
+}
+
+@media(max-width:576px){
+  h5 { font-size:16px; }
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  opacity: 1;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: rgba(0,0,0,0.6);
+  border-radius: 50%;
+  padding: 12px;
+}
+
+/* Extracted from includes/footer.php */
+.custom-footer {
+  background-color: #1b1b1bf2;
+  color: #ffffff;
+}
+
+
+
+
+
